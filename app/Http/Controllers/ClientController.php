@@ -53,8 +53,9 @@ class ClientController extends Controller
     public function update(Request $request, $id)
     {
         //
-    }
 
+       \CodeProject\Client::find($id)->save();
+    }
     /**
      * Remove the specified resource from storage.
      *
