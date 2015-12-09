@@ -15,11 +15,11 @@ class UserTableSeeder extends Seeder
 		
 		factory(\CodeProject\Entities\User::class)->create([
 			'name' => 'Jorge',
-			'email' => 'jorgegru1@gmail.com',
+			'email' => 'jorgegru@gmail.com',
 			'password' => bcrypt(123456),
 			'remember_token' => str_random(10)
 		]);
-		
+
 		
 		factory(\CodeProject\Entities\User::class,11)->create();
     }
