@@ -17,8 +17,8 @@ class ProjectTransformers extends TransformerAbstract
     public function transform(Project $project){
 
         return [
-           
             'description' => $project->description,
+            'description2' => $project->description,
             'progress' => $project->progress,
             'status' => $project->status,
             'due_date' => $project->due_date,
