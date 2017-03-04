@@ -18,6 +18,7 @@ class ProjectTransformers extends TransformerAbstract
 
         return [
             'description' => $project->description,
+            'description2' => $project->description,
             'progress' => $project->progress,
             'status' => $project->status,
             'due_date' => $project->due_date,
